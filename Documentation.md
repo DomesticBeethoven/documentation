@@ -14,51 +14,29 @@ This document provides an overview of the organisation of our structural model a
 
 
 [Model](#heading=h.6hhynxdf5wtq)
-
-
-
-<p id="gdcalert2" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: undefined internal link (link text: "1. Evidence objects"). Did you generate a TOC? </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert3">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
 [1. Evidence objects](#heading=h.quhpm5izeinj)
-
 	[Resources](#bookmark=id.8f6laplxwf4t)
-
 	[References](#bookmark=id.dd160n2gval2)
-
-
-
-<p id="gdcalert3" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: undefined internal link (link text: "2. Musical objects"). Did you generate a TOC? </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert4">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
 [2. Musical objects](#heading=h.8zgtsgm1emj7)
-
 	[Selection](#bookmark=id.y335anir1t44)
-
 	[Extract](#bookmark=id.t3vbgs6wx6q7)
-
 	[Musical Material](#bookmark=id.deurz458gwic)
-
 	[Musical Idea](#bookmark=id.r4z5yln2cx5q)
-
-
-
-<p id="gdcalert4" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: undefined internal link (link text: "3. Musicological objects"). Did you generate a TOC? </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert5">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
 [3. Musicological objects](#heading=h.b2zx3u2rk1dk)
-
 	[Observation](#bookmark=id.v7c4cq1kr137)
-
 	[Relationship](#bookmark=id.3z1vu4kcelm2)
-
 	[Commentary](#bookmark=id.prvw4ky6721h)
 
 
-# MODEL
+## MODEL
 
 We present here our original conception of a multi-layered hierarchy and describe how we propose to operationalize these concepts in order to provide a framework for musical annotation. Briefly stated, this model shows how portions of digitized data in various files and formats can be identified, selected, labelled, and compared.
 
 The following chart presents a top-down view.
 
+```
 NIRVANA-ED STACK MODEL
+```
 
 Each layer corresponds to one of the three main categories of objects that represent our data: raw materials and digitized sources; user-selected musical elements and their aggregates in various relevant combinations; and their musicological labellying and scholarly commentary.
 
@@ -72,29 +50,26 @@ A bottom-up overview of the structures is presented below. ~~The entities descri
 
 These are digitized materials that will be used for the musicological investigation. This includes the images of musical scores and the MEI encodings that are stored on the project repository. It also includes music recordings (in the form of audio files, digital video, image files), text documents, and URIs of secondary source materials, such as books and articles.
 
-**<code><span style="text-decoration:underline;">Resources</span></code></strong> refer to complete documents or files we have access to.
+<code><span style="text-decoration:underline;">Resources</span></code> refer to complete documents or files we have access to.
 
 **Examples**
-
-
-
+```
 * a MEI file: [https://github.com/DomesticBeethoven/data/blob/main/op.%2093/QuintettSteiner%20-%20D-BNba%20C93_26/D-BNba93_26.1st.36-44.mei](https://github.com/DomesticBeethoven/data/blob/main/op.%2093/QuintettSteiner%20-%20D-BNba%20C93_26/D-BNba93_26.1st.36-44.mei)
 * a IIIF image: [https://github.com/DomesticBeethoven/api/Scaler/IIIF/C93-26/…](https://github.com/DomesticBeethoven/api/Scaler/IIIF/C93-26/…)
 * a MP3 file: [https://github.com/DomesticBeethoven/api/audio/MackerrasLvbOp93.mp3](https://github.com/DomesticBeethoven/api/audio/MackerrasLvbOp93.mp3)
 * a PDF document: [https://doi.org/10.2307/763996](https://doi.org/10.2307/763996)
+```
 
-**<code><span style="text-decoration:underline;">References</span></code></strong> are the URIs used to retrieve the <code>Resources</code> or to point to a place or region in the <code>Resources</code>.
 
- \
+<code>References</code> are the URIs used to retrieve the <code>Resources</code> or to point to a place or region in the <code>Resources</code>.
+
 **Examples**
-
-
-
+```
 * the xml:id of an MEI note or measure element: #D-BNba93_26.1st.36-44.mei#measure_36
 * an element that contains cardinal coordinates on an image facsimile: &lt;**graphic** xml:id="graphic_f6fde83d-64" target="00030.jpg" type="facsimile" width="3240" height="4030"/>&lt;**zone** xml:id="zone_c564dbd0-0d" type="measure" ulx="314" uly="460" lrx="1164" lry="776"/>
 * a timestamp: MackerrasLvbOp93.mp3#t45-60
 * a DOI: doi:10.2307/746230
-
+```
 
 
 2.
