@@ -1,0 +1,495 @@
+<!-- Output copied to clipboard! -->
+
+<!-----
+
+You have some errors, warnings, or alerts. If you are using reckless mode, turn it off to see inline alerts.
+* ERRORs: 11
+* WARNINGs: 0
+* ALERTS: 15
+
+Conversion time: 2.027 seconds.
+
+
+Using this HTML file:
+
+1. Paste this output into your source file.
+2. See the notes and action items below regarding this conversion run.
+3. Check the rendered output (headings, lists, code blocks, tables) for proper
+   formatting and use a linkchecker before you publish this page.
+
+Conversion notes:
+
+* Docs to Markdown version 1.0β33
+* Thu Sep 22 2022 04:10:42 GMT-0700 (PDT)
+* Source doc: BitH Model Documentation
+
+ERROR:
+undefined internal link to this URL: "#heading=h.6hhynxdf5wtq".link text: Model
+?Did you generate a TOC?
+
+
+ERROR:
+undefined internal link to this URL: "#heading=h.quhpm5izeinj".link text: 1. Evidence objects
+?Did you generate a TOC?
+
+
+ERROR:
+undefined internal link to this URL: "#heading=h.8zgtsgm1emj7".link text: 2. Musical objects
+?Did you generate a TOC?
+
+
+ERROR:
+undefined internal link to this URL: "#heading=h.b2zx3u2rk1dk".link text: 3. Musicological objects
+?Did you generate a TOC?
+
+
+ERROR:
+undefined internal link to this URL: "#heading=h.cjqmbt9ey13u".link text: Appendix: RDF examples
+?Did you generate a TOC?
+
+
+ERROR:
+undefined internal link to this URL: "#heading=h.ufl6veu55skc".link text: Selection in Audio and score
+?Did you generate a TOC?
+
+
+ERROR:
+undefined internal link to this URL: "#heading=h.35teb6bh7e1x".link text: MusicalMaterial, Selection, Extract
+?Did you generate a TOC?
+
+
+ERROR:
+undefined internal link to this URL: "#heading=h.y67zwpiouy3n".link text: Musicological Layer
+?Did you generate a TOC?
+
+
+ERROR:
+undefined internal link to this URL: "#heading=h.2olezba676wh".link text: Glossary
+?Did you generate a TOC?
+
+
+ERROR:
+undefined internal link to this URL: "#heading=h.ufl6veu55skc".link text:  Appendix: A and B
+?Did you generate a TOC?
+
+
+ERROR:
+undefined internal link to this URL: "#heading=h.y67zwpiouy3n".link text:  Appendix: C
+?Did you generate a TOC?
+
+* Tables are currently converted to HTML tables.
+* This document has images: check for >>>>>  gd2md-html alert:  inline image link in generated source and store images to your server. NOTE: Images in exported zip file from Google Docs may not appear in  the same order as they do in your doc. Please check the images!
+
+
+WARNING:
+You have 3 H1 headings. You may want to use the "H1 -> H2" option to demote all headings by one level.
+
+----->
+
+
+<p style="color: red; font-weight: bold">>>>>>  gd2md-html alert:  ERRORs: 11; WARNINGs: 1; ALERTS: 15.</p>
+<ul style="color: red; font-weight: bold"><li>See top comment block for details on ERRORs and WARNINGs. <li>In the converted Markdown or HTML, search for inline alerts that start with >>>>>  gd2md-html alert:  for specific instances that need correction.</ul>
+
+<p style="color: red; font-weight: bold">Links to alert messages:</p><a href="#gdcalert1">alert1</a>
+<a href="#gdcalert2">alert2</a>
+<a href="#gdcalert3">alert3</a>
+<a href="#gdcalert4">alert4</a>
+<a href="#gdcalert5">alert5</a>
+<a href="#gdcalert6">alert6</a>
+<a href="#gdcalert7">alert7</a>
+<a href="#gdcalert8">alert8</a>
+<a href="#gdcalert9">alert9</a>
+<a href="#gdcalert10">alert10</a>
+<a href="#gdcalert11">alert11</a>
+<a href="#gdcalert12">alert12</a>
+<a href="#gdcalert13">alert13</a>
+<a href="#gdcalert14">alert14</a>
+<a href="#gdcalert15">alert15</a>
+
+<p style="color: red; font-weight: bold">>>>>> PLEASE check and correct alert issues and delete this message and the inline alerts.<hr></p>
+
+<p>
+V. 0.2 &#8211; 22 Sep 2022
+</p>
+<h1>Beethoven in the House: Model documentation</h1>
+<p>
+This document provides an overview of a structural model that aims to support the association of multiple source materials and the development of comparative musicological research, as designed for use in the <em>Beethoven in the House</em> research project. Although the model has, thus far, only been assessed within this project, we anticipate wider applicability encompassing other sources and musicological investigations.
+</p>
+<p>
+<div id="toc_container">
+  <p class="toc_title">Contents</p>
+    <ul class="toc_list">
+    <li><a href="#Model">Model</a>
+    <li><a href="#EvidenceObjects">1. Evidence objects</a>
+    <li><a href="#Resources">Resources</a>
+    <li><a href="#References">References</a>
+    <li><a href="#MusicalObjects">2. Musical objects</a>
+    <li><a href="#Selection">Selection</a>
+    <li><a href="#Extract">Extract</a>
+    <li><a href="#MusicalMaterial">Musical Material</a>
+    <li><a href="#MusicalIdea">Musical Idea</a>
+    <li><a href="#MusicologicalObjects">3. Musicological objects</a>
+    <li><a href="#Observation">Observation</a>
+    <li><a href="#Relationship">Relationship</a>
+    <li><a href="#Commentary">Commentary</a>
+    <li><a href="#Appendix">Appendix: RDF examples</a>
+    <li><a href="#Appendix1">Selection in audio and score</a>
+    <li><a href="#Appendix2">MusicalMaterial, Selection, Extract</a>
+    <li><a href="#Appendix3">Musicological layer</a>
+    <li><a href="#Glossary">Glossary</a>
+  </ul>
+</div>
+
+<h2 id="Model">Model</h2>
+</p>
+<p>
+We present our multi-layered, conceptual model for associating musical source materials to musicological arguments. We  describe our proposal for operationalizing these concepts through a framework for musical annotation. Briefly stated, this model shows how portions of digitised data in various files and formats can be identified, selected, labelled, and compared.
+</p>
+<p>
+The following chart presents a top-down view.
+</p>
+<p>
+<img src="images/diagram1.png" width="" alt="Diagram of the model" title="image_tooltip">
+</p>
+<p>
+Each layer in the model corresponds to one of the three main categories of objects that represent our data:
+</p>
+<ul>
+<li><strong>Evidence Objects</strong> &#8211; digitised sources;
+<li><strong>Musical Objects</strong> &#8211; user-selected musical elements and their aggregates in various relevant combinations; and
+<li><strong>Musicological Objects</strong> &#8211; their musicological labelling and scholarly commentary.
+</li>
+</ul>
+<p>
+Prior to primary scholarly activity, in this case research commentary involving multiple sources, a series of steps must be completed including identification of available resources, selection of items of interest, and addressing locations in these sources. The two lower levels of the model are therefore, generally speaking, concerned with collecting the desired data, while the upper level involves critical judgement.
+</p>
+<p>
+A bottom-up introduction to these structures follows.
+</p>
+
+<h3 id="EvidenceObjects">EVIDENCE OBJECTS</h3>
+<p>
+These are digitised materials that will be used for the musicological
+investigation. They include images of musical scores and the MEI encodings
+(stored in project repositories and digital libraries), music recordings (in the
+form of audio files and digital video), text documents, and links to secondary
+source materials, such as books and articles.
+</p>
+<p>
+<p id="gdcalert11" ><span style="color: red; font-weight: bold">>>>>>
+gd2md-html alert: inline image link here (to images/image2.png). Store image on
+your image server and adjust path/filename/extension if necessary.
+</span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert12">Next
+alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
+<img src="images/image2.png" width="" alt="alt_text" title="image_tooltip">
+</p>
+<p>
+<strong><code><span
+style="text-decoration:underline;">Resources</span></code></strong> refer to
+complete documents or files which can be unambiguously identified using a
+Universal Resource Identifier (URI). Typically we would expect to be able to
+access these.
+
+<p>
+<strong>Examples</strong>
+</p>
+<ul>
+<li>an encoded music file: <a
+href="https://github.com/DomesticBeethoven/documentation/blob/main/examples/ex-1.1-resources-1.mei">https://github.com/DomesticBeethoven/documentation/blob/main/examples/ex-1.1-resources-1.mei</a>
+<li>an image file: <a
+href="https://github.com/DomesticBeethoven/documentation/raw/main/examples/ex-1.1-resources-2.jpg">https://github.com/DomesticBeethoven/documentation/raw/main/examples/ex-1.1-resources-2.jpg</a>
+<li>a video file: <a
+href="https://www.youtube.com/watch?v=Iq4bHt5FTmY">https://www.youtube.com/embed/Iq4bHt5FTmY</a>
+<li>a document file: <a
+href="https://doi.org/10.2307/763996">https://doi.org/10.2307/763996</a>
+</li>
+</ul>
+<p>
+<strong><a
+href="https://github.com/DomesticBeethoven/documentation/raw/main/examples/ex-1.1-resources-2.jpg">
+</a></strong>
+</p>
+<p>
+<strong><code><span
+style="text-decoration:underline;">References</span></code></strong> are places
+or regions within a <code>Resource</code>, and are also identified using
+URIs.
+
+<p>
+<br><strong>Examples</strong>
+</p>
+<ul>
+<li>the XML ID of an MEI element: <a
+href="https://github.com/DomesticBeethoven/documentation/blob/main/examples/ex-1.1-resources-1.mei">ex-1.1-resources-1.mei</a>#<strong>dynam-0000001714625823</strong>
+<li>a region in a MEI file: <<a
+href="http://domestic-beethoven/mei/ex.mei#zone_c564dbd0-0d">http://domestic-beethoven/mei/ex.mei#zone_c564dbd0-0d</a>>
+<li>a timestamp: #t=12.5/20.0
+<li>a DOI of a text resource: doi:10.2307/746230
+</li>
+</ul>
+<ol>
+<li>
+MUSICAL OBJECTS
+<p>
+These refer to the music that will be investigated, be it in whole or in part,
+in notated, image, audio or video format. The types of musical objects refer to
+the various levels of collection and abstraction pertinent to the musical
+research, closely following FRBR principles. FRBR terminology is used whenever
+possible, although there are particularities pertaining to the domain of music
+which we reflect through our use of FRBR subclasses. Any of these musical
+objects may be the target of an <code>Observation</code>.
+</p>
+<p>
+<p id="gdcalert12" ><span style="color: red; font-weight: bold">>>>>>
+gd2md-html alert: inline image link here (to images/image3.png). Store image on
+your image server and adjust path/filename/extension if necessary.
+</span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert13">Next
+alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
+<img src="images/image3.png" width="" alt="alt_text" title="image_tooltip">
+</p>
+<p>
+A <strong><code><span
+style="text-decoration:underline;">Selection</span></code></strong> is the
+lowest level of grouping musical references. It contains the complete set of
+URIs for the individual components of a musical extract, be that a single
+resource, or multiple resources derived from a single source of material, such
+as a set of orchestral parts. It is a subclass of
+<code>frbr:Manifestation</code> because it gathers together digitised
+embodiments of a <a href="#bookmark=id.d9wtiw76t0oi">musical source</a>. Every
+<code>Selection</code> must be part of an <code>Extract</code> because it is
+assumed that every piece potentially has at least two manifestations: one
+written and one performed.
+
+<p>
+<strong>Examples</strong>
+</p>
+<ul>
+<li>an area on the surface of the score
+<li>part of a music audio/video file
+<li>a passage in the instrumental parts of the same musical score
+</li>
+</ul>
+</li>
+</ol>
+<p>
+➜ See
+<p id="gdcalert13" ><span style="color: red; font-weight: bold">>>>>>
+gd2md-html alert: undefined internal link (link text: " Appendix: A and B"). Did
+you generate a TOC? </span><br>(<a href="#">Back to top</a>)(<a
+href="#gdcalert14">Next alert</a>)<br><span style="color: red; font-weight:
+bold">>>>>> </span></p>
+<a href="#heading=h.ufl6veu55skc"> Appendix: A and B</a> for RDF examples
+</p>
+<p>
+An <strong><code><span
+style="text-decoration:underline;">Extract</span></code></strong> collects
+various instances of a feature or passage. It is used to gather
+<code>Selections</code> from different media representing a musical source (this
+may mean multiple manifestations – for example, a scan of a particular edition
+and a recording based on this edition). Extracts may be grouped together as
+<code>ma:setting</code> of a <code>MusicalMaterial</code> (see below), a unique
+musical expression.
+
+<p>
+<strong>Examples</strong>
+</p>
+<ul>
+<li>a single <code>Selection</code>
+<li>a combination of <code>Selections</code> from different sources, such as the
+XML IDs of consecutive measures in an MEI file and the timestamps of its
+corresponding section in an audio file
+</li>
+</ul>
+<p>
+<strong><code><span
+style="text-decoration:underline;">MusicalMaterial</span></code></strong> is an
+abstract entity that refers to the musical concept behind a music extract, such
+as a passage, phrase or fragment. It is primarily used to group a particular
+aspect of a musical extract with an analogous – or what we are calling a
+<em>parallel</em> – moment or passage in distinct versions of a musical work.
+<code>MusicalMaterial</code> represents a single musical thought, independent of
+its various manifestations in different arrangements or recordings (or, in a
+variation set, within a single variation).
+
+<p>
+Since it is an abstraction, <code>MusicalMaterial</code> does not necessarily
+have a notated expression. It can correspond to just a “core” musical thought or
+be identical with one of its expressions, according to the scholar’s
+interpretation of the music.  <code>MusicalMaterial</code> can refer to any
+segment of music, independent of formal structures. It is a subclass of
+<code>frbr:Expression</code> because it represents the realisation of a
+<code>MusicalIdea</code>.
+</p>
+<p>
+<strong>Examples</strong>
+</p>
+<ul>
+<li>the recapitulation section in two arrangements of the same work
+<li>a citation from a piece that is featured in another piece: the Dies Irae
+theme in the 4th movement of Berlioz’s <em>Symphonie fantastique</em>
+</li>
+</ul>
+<p>
+<strong><code><span
+style="text-decoration:underline;">MusicalIdea</span></code></strong> is an
+abstract entity that refers to the musical thought behind a recurring musical
+structure, such as a theme or a motiv. Although it is similar to
+<code>MusicalMaterial</code> in the sense that it is an abstraction,
+<code>MusicalIdea</code> primarily groups elements that can be found not only in
+parallel passages in different musical pieces but also within a single musical
+piece, and consequently has greater affinity with established musical
+structures. As <code>MusicalMaterial</code>, <code>MusicalIdea</code> is
+abstract and does not require a notated form. It is a subclass of  frbr:Work
+because it is an idealised “seed” of its multiple expressions throughout a
+musical piece.
+
+<p>
+<code>MusicalIdeas</code>, as abstractions, must be realised in the form of
+<code>MusicalMaterial</code>. Even if the <code>MusicalMaterial</code> only
+occurs in one version, it represents the concept behind a passage, and could
+recur (i.e. a second expression of the same <code>MusicalIdea</code> always
+potentially exists).
+</p>
+<p>
+<strong>Examples</strong>
+</p>
+<ul>
+<li>the entries of a subject in a fugue
+<li>a motiv that is repeated and developed in a sonata-form piece
+</li>
+</ul>
+<ol>
+<li>
+MUSICOLOGICAL OBJECTS
+<p>
+Whereas the previous layers describe and structure musicological evidence,
+Musicological Objects enable us to document musicological research. These
+objects are used to describe, compare and record historical context associated
+with the collected musical objects, as well as to present hypotheses, link them
+to non-musical sources and make scholarly commentary. This is accomplished using
+the <a href="https://www.w3.org/TR/annotation-model/">Web Annotation</a>
+standard, capturing annotations along with their motivation and provenance.
+</p>
+<p>
+<p id="gdcalert14" ><span style="color: red; font-weight: bold">>>>>>
+gd2md-html alert: inline image link here (to images/image4.png). Store image on
+your image server and adjust path/filename/extension if necessary.
+</span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert15">Next
+alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
+<img src="images/image4.png" width="" alt="alt_text" title="image_tooltip">
+</p>
+<p>
+<strong><code><span
+style="text-decoration:underline;">Observations</span></code></strong> usually
+contain a simple textual remark that targets a musical object. In most cases, it
+will be used to label such objects or to present one of their relevant features.
+<code>Observations</code> aim to be objective, non-controversial, or traditional
+descriptions, so that they can be reused.
+
+<p>
+<code>Observations</code> might also target <code>References</code> of
+non-musical objects relevant to the research, such as letters (as text or as
+image) or historical newspaper advertisements.
+</p>
+<p>
+<strong>Examples</strong>
+</p>
+<ul>
+<li>a label: “This is the theme A of this sonata-form movement.”
+<li>something notable: “There is a <em>fff</em> (fortississimo) marking here.”
+<li>a description: “The development section starts with bassoon and oboe playing
+the main motiv.”
+</li>
+</ul>
+</li>
+</ol>
+<p>
+<strong><code><span
+style="text-decoration:underline;">Relationships</span></code></strong> are used
+to juxtapose more than one musical object by connecting
+<code>Observations</code>, <code>Commentaries</code> and other
+<code>Relationships</code>. They also aim to be a simple text remark, usually
+noting a commonality, a substitution, an addition or a deletion between
+<code>Observations</code>. More complex details, such as the reason for a
+particular change, are recorded in <code>Commentaries</code>.
+
+<p>
+<strong>Examples</strong>
+</p>
+<ul>
+<li>a comparison: “The <em>fff</em> (fortississimo) marking in version A was
+substituted by an <em>ff</em> (fortissimo) in version B.”
+<li>noting a common pattern: “The  <em>fff</em> to <em>ff</em> substitution
+occurs in these three passages.”
+<li>a deletion: “The introduction was suppressed in version B.”
+</li>
+</ul>
+<p>
+<strong><code><span
+style="text-decoration:underline;">Commentaries</span></code></strong> are used
+to make more complex comparisons, bring attention to relevant aspects of the
+music and to present hypotheses to explain any differences observed.
+<code>Commentaries</code> can also present historical or analytical reflections
+informed by academic research, including pointers to external sources and
+references.
+
+<p>
+<strong>Examples</strong>
+</p>
+<ul>
+<li>a comparison: “The bassoon part in the orchestra version has staccatos that
+were substituted by a pizzicato in the violoncello in the piano trio version.
+This represents a deliberate change of articulation since the violoncello is
+capable of playing it as written in the orchestra version.”
+<li>a notable event: “At this time, <em>fff</em> markings were absolutely rare.
+They were probably introduced in the musical vocabulary by Beethoven himself,
+and even then they figure only in three of his works (see SHEER 1998, 361).”
+<li>a hypothesis: “This substitution of staccatos by pizzicatos may have been
+done due to the change in instrumentation.”
+</li>
+</ul>
+<p>
+➜ See
+<p id="gdcalert15" ><span style="color: red; font-weight: bold">>>>>>
+gd2md-html alert: undefined internal link (link text: " Appendix: C"). Did you
+generate a TOC? </span><br>(<a href="#">Back to top</a>)(<a
+href="#gdcalert16">Next alert</a>)<br><span style="color: red; font-weight:
+bold">>>>>> </span></p>
+<a href="#heading=h.y67zwpiouy3n"> Appendix: C</a> for RDF examples
+</p>
+<p>Appendix: RDF examples
+</p>
+<h1>Example A: Selection from Audio and Score</h1>
+
+
+
+<pre
+class="prettyprint">bith:bassoonStaccatoSelection a bithTerms:Selection ;
+  frbr:part
+     bith:C93-30_Partitur.mei#staff-36-fg ,
+     bith:C93-30_Partitur.mei#staff-37-fg ,
+       ...
+     bith:C93-30_Partitur.mei#staff-44-fg .
+
+bith:bassoonStaccatoSelectionMackerras a bithTerms:Selection ;
+  frbr:part bith:MackerrasLvbOp93.mp3#t=45,60 .</pre>
+<h1>Example B: Musical Material, Extracts and Selections from the annotation
+environment</h1>
+<p>
+TBA
+</p>
+<h1>Example C: Musicological layer [e.g. fff]</h1>
+<p>
+TBA
+</p>
+<p>Glossary
+</p>
+<p>
+<strong>Musical Source</strong>: a unique edition of a musical work. It can be
+made up of a single score (e.g. a piano solo piece) or a collection of scores
+(e.g. a conductor’s score plus each instrument part in an orchestral piece). For
+the same work, a manuscript, a printed first edition and a reprint constitute
+three different musical sources. However, two identical digitised scores can
+refer to a single musical source, although they are different <a
+href="#bookmark=id.8f6laplxwf4t">resources</a>.
+</p>
